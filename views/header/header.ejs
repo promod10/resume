@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>
+        <%= title %>
+    </title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Pramod Chaudhary</a>
+            <button class="navbar-toggler dropdown-menu-end" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarDark" aria-controls="navbarDark" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse show" id="navbarDark">
+                <ul class="navbar-nav me-auto mb-2 mb-xl-0 fs-5 ms-auto p-2 text-center">
+                    <li class="nav-item me-3">
+                        <a aria-current="page" href="/"
+                            class="nav-link <% if(page_name == 'Home'){ %> active <% } %>">Home</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a aria-current="page" href="/skill"
+                            class="nav-link <% if(page_name == 'Skill'){ %> active <% } %>">Skill</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a aria-current="page" href="/portfolio"
+                            class="nav-link <% if(page_name == 'Portfolio'){ %> active <% } %>">Portfolio</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a aria-current="page" href="/contact"
+                            class="nav-link <% if(page_name == 'Contact'){ %> active <% } %>">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
